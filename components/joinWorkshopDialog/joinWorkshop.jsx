@@ -188,7 +188,7 @@ const JoinWorkshop = ({ open, setOpen, handleOpen, step, setStep }) => {
                     </p>
                     <div className="flex overflow-x-hidden space-x-[12px]">
                       {chipdata.map((text) => (
-                        <Chip description={text} />
+                        <Chip description={text} key={text} />
                       ))}
                     </div>
                   </div>
@@ -199,7 +199,7 @@ const JoinWorkshop = ({ open, setOpen, handleOpen, step, setStep }) => {
                     </p>
                     <div className="flex overflow-x-hidden space-x-[12px]">
                       {chipdata.map((text) => (
-                        <Chip description={text} />
+                        <Chip description={text} key={text} />
                       ))}
                     </div>
                   </div>
@@ -379,7 +379,7 @@ const JoinWorkshop = ({ open, setOpen, handleOpen, step, setStep }) => {
                   </p>
                   <div className="flex space-x-[12px]">
                     {chipdata.slice(0, 4).map((text) => (
-                      <Chip description={text} />
+                      <Chip description={text} key={text} />
                     ))}
                   </div>
                 </div>
@@ -390,7 +390,7 @@ const JoinWorkshop = ({ open, setOpen, handleOpen, step, setStep }) => {
                   </p>
                   <div className="flex overflow-x-hidden space-x-[12px]">
                     {chipdata.slice(0, 4).map((text) => (
-                      <Chip description={text} />
+                      <Chip description={text} key={text} />
                     ))}
                   </div>
                 </div>

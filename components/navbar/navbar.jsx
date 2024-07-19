@@ -70,9 +70,13 @@ const Navbar = () => {
         </div>
         <div>
           <div className="hidden 2xl:flex space-x-[24px]">
-            {links.map((link) => {
+            {links.map((link, index) => {
               return (
-                <LinkButton linkText={link.text} nested={link.nestedLinks} />
+                <LinkButton
+                  linkText={link.text}
+                  nested={link.nestedLinks}
+                  key={index}
+                />
               );
             })}
           </div>

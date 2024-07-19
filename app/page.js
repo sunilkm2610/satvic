@@ -44,8 +44,14 @@ export default function Home() {
 
         <div className="flex justify-center items-center absolute top-[200px] lg:top-[291px] z-20 w-full pb-20">
           <div className="space-y-[40px]">
-            {workshopCardData.map((data) => {
-              return <Card data={data} handleOpen={() => setOpen(true)} />;
+            {workshopCardData.map((data, index) => {
+              return (
+                <Card
+                  data={data}
+                  handleOpen={() => setOpen(true)}
+                  key={index}
+                />
+              );
             })}
           </div>
         </div>

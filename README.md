@@ -6,7 +6,7 @@ This project is licensed for assisgnment use only. For commercial use, a license
 
 Here are a few examples of how you can and cannot use the code:
 
-- **Code by Sunil Kumar, Desing by Satvi movement, Please take primission before copy the design from Satvi movement** ✅
+- **Code by Sunil Kumar, Desing by Satvi movement, Please take permission before copy the design from Satvi movement** ✅
 - **To run as a business?** ❌
 - **To run as a SaaS?** ❌
 - **Any form of income through the code?** ❌

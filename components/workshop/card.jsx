@@ -67,12 +67,13 @@ const Card = ({ data, handleOpen }) => {
             </div>
 
             <div className="mb-[18px] flex space-x-[20px]">
-              {data.fetures.map((feature) => {
+              {data.fetures.map((feature, index) => {
                 return (
                   <FeatueCard
                     iconPath={feature.iconPath}
                     title={feature.title}
                     description={feature.description}
+                    key={index}
                   />
                 );
               })}
