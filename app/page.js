@@ -10,9 +10,10 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const [step, setStep] = useState(1);
   const handleOpen = () => {
-    setOpen(!open);
     setStep(1);
+    setOpen(!open);
   };
+
   return (
     <main className="">
       <Navbar />
@@ -23,19 +24,28 @@ export default function Home() {
           }
           width={1915}
           height={410.49}
-          className="h-auto object-fill"
+          className="h-auto object-fill hidden md:block"
         />
+        <Image
+          src={
+            "https://s3-alpha-sig.figma.com/img/3e3b/549c/97f56a8351d296fad111e8e88ccd5d8b?Expires=1722211200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=QVTLcnBvLP8ikEd-qJG-AqI3HgDfpg3efAr~7MRdmLe1efiTvp4VORQdiSnN9VuAMOEHFK778sz0y281tVrXALgP6ib0Z3wcT4SInkrTAIQj6IY9OGpcNzQfm3fH8ERcvdQqPw9kHJ1dJ7dcq0HcbIeZOimVA9n1qhEEmsXDohBqCmNCiyxCzY6T5rLrsw6BhZSOxQPPW7~DI7uV1knve~AV~y9B-JK6Q40QAv6e5yzxM8CgL28yuqZujB9dJnuqw1-gF6VQNLbGWJnBats~cypis-EDSFAxo1CFDkv7sSRr9lNVD3uC2QAoDyGZCTEbFS3hfLwQje~tthq8NNJWPQ__"
+          }
+          width={1915}
+          height={410.49}
+          className="h-auto object-fill block md:hidden"
+        />
+
         <Image
           src={"/workshop-card/page-tear.svg"}
           width={1915}
           height={410.49}
-          className="absolute lg:top-[257px] md:top-[100px] top-[150px]"
+          className="absolute md:-bottom-1/4 -bottom-1"
         />
 
-        <div className="flex justify-center items-center absolute top-[291px] z-20 w-full">
+        <div className="flex justify-center items-center absolute top-[200px] lg:top-[291px] z-20 w-full pb-20">
           <div className="space-y-[40px]">
             {workshopCardData.map((data) => {
-              return <Card data={data} handleOpen={handleOpen} />;
+              return <Card data={data} handleOpen={() => setOpen(true)} />;
             })}
           </div>
         </div>

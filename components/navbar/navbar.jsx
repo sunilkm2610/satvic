@@ -57,7 +57,7 @@ const LinkButton = ({ linkText, nested }) => {
 
 const Navbar = () => {
   return (
-    <div className="px-[34px] bg-white py-[25.5px] h-fit">
+    <div className="px-[16px] py-[12px] md:px-[34px] bg-white md:py-[25.5px] h-fit">
       <div className="flex justify-between">
         <div className="flex items-center justify-center">
           <Image
@@ -69,7 +69,7 @@ const Navbar = () => {
           />
         </div>
         <div>
-          <div className="flex space-x-[24px]">
+          <div className="hidden 2xl:flex space-x-[24px]">
             {links.map((link) => {
               return (
                 <LinkButton linkText={link.text} nested={link.nestedLinks} />
@@ -77,7 +77,10 @@ const Navbar = () => {
             })}
           </div>
         </div>
-        <div className="flex space-x-[10px]">
+        <div className="flex 2xl:hidden space-x-[10px]">
+          <Image src={"/icons/hamburger.svg"} width={18} height={18} />
+        </div>
+        <div className="hidden 2xl:flex space-x-[10px]">
           <Image src={"/icons/search.svg"} width={18} height={18} />
           <Image src={"/icons/earth.svg"} width={18} height={18} />
           <Image src={"/icons/user.svg"} width={18} height={18} />

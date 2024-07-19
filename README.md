@@ -1,3 +1,19 @@
+## License
+
+This project is licensed for assisgnment use only. For commercial use, a license must be purchased from Sunil kumar. [Porfolio](https://sunilk.vercel.app)
+
+## Usage Guidelines
+
+Here are a few examples of how you can and cannot use the code:
+
+- **Code by Sunil Kumar, Desing by Satvi movement, Please take primission before copy the design from Satvi movement** ✅
+- **To run as a business?** ❌
+- **To run as a SaaS?** ❌
+- **Any form of income through the code?** ❌
+- **To resell?** ❌
+- **To create content?** ❌
+- **To claim as your own?** ❌
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

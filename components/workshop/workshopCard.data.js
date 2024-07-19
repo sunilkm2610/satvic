@@ -117,7 +117,7 @@ export const workshopCardData = [
     ],
     title: "7-Day Satvic Food Challenge",
     description:
-      "Cook-along all three meals with us, and experience the magic of Satvic eating!",
+      "Cook-along all three meals with us, and experience the magic of Satvic eating to take charge of your joy!",
     review: {
       rating: 4.8,
       count: 3034,

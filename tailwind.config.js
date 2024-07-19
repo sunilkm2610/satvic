@@ -59,7 +59,7 @@ module.exports = {
       },
       boxShadow: {
         mainCard: "0px 4px 20px 0px rgba(43, 43, 43, 0.08)",
-        secondary: "0px 4px 20px 0px #2B2B2B14",
+        secondary: "0px -4px 20px 0px #2B2B2B0F",
       },
       keyframes: {
         "accordion-down": {
